@@ -29,3 +29,9 @@ def game_init():
 
     if init:
         init()
+
+def game_do(fname, *args, **kwargs):
+    f = access_code(fname)
+
+    if f:
+        f(*args, **kwargs)
